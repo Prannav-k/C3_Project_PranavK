@@ -67,5 +67,12 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+    /** Part 3: Failing test case **/
+    @Test
+    public void get_total_should_return_item_sum(){
+        int actualSum = 388 ; // @beforeEach method is adding items worth 338 with below names.
+        int queriedSum=restaurant.getTotal("Sweet corn soup","Vegetable lasagne");
+        assertEquals(actualSum,queriedSum);
+    }
 
 }

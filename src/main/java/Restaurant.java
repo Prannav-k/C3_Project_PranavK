@@ -63,11 +63,17 @@ public class Restaurant {
                 + "Opening time:" + openingTime + "\n"
                 + "Closing time:" + closingTime + "\n"
                 + "Menu:" + "\n" + getMenu());
-
     }
 
     public String getName() {
         return name;
     }
+
+    //takes in item names and returns sum of prices
+    public int getTotal(String ...names){
+        //TODO method
+        return 0;
+    }
+
 
 }
