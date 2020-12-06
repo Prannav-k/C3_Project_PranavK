@@ -71,8 +71,12 @@ public class Restaurant {
 
     //takes in item names and returns sum of prices
     public int getTotal(String ...names){
-        //TODO method
-        return 0;
+        int sum=0;
+        for(String name : names){
+            //need not check for existence as ones coming are already from menu
+            sum=sum + findItemByName(name).getPrice();
+        }
+        return sum;
     }
 
 
